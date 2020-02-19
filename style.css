@@ -42,16 +42,16 @@ section:after{
 #prop1 .offerte>img {
   height: 150px;
 }
-#prop1 .offerte>h4{
+#prop1 .offerte h4{
   font-size: 18px;
   color: #7fb802;
 }
-#prop1 .offerte>hr{
+#prop1 .offerte hr{
   width: 35px;
   height: 2px;
   margin: 10px auto;
 }
-#prop1 .offerte>p{
+#prop1 .offerte p{
   font-size: 16px;
   color: #999;
 }
@@ -127,6 +127,8 @@ display: inline-block;
   font-size: 16px;
   color: #98c8f8;
   padding-top: 10px;
+  float: left;
+  width: 45%;
 }
 
 
@@ -215,13 +217,7 @@ display: inline-block;
   color: #7fb802;
   font-size: 1.2em;
 }
-/* @media only screen and (max-width:800px) {
-    #prop1{
-      font-size: 16px;
-      width: 100%;
-    }
 
-  } */
   /* impostazioni generali */
 *{
   box-sizing: border-box;
@@ -332,23 +328,38 @@ main::after{
 .blue-contenuto{
   float: left;
   color: white;
+  padding: 50px 0px 0px 100px;
+  width: calc(100% - 800px);
+}
+.blue-contenuto2{
+  float: left;
+  color: white;
   padding: 50px 70px 50px 100px;
   width: 100%;
 }
 .div-h1{
-  width: 50%;
+  width: 100%;
   padding-bottom: 30px;
 }
 h1{
-  font-size: 45px;
+  font-size: 35px;
   line-height: 55px;
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
 }
 .blue-sfondo{
-  background-image: url(img/sfondo-blue.JPG);
+  background-color: #0d325a;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
+}
+.vecchi{
+  float: right;
+  width: 800px;
+  height: 100%;
+}
+.vecchi> img{
+  float: right;
+  height: 100%;
 }
 /* section blue */
 .blue{
@@ -486,7 +497,6 @@ h5{
 .footer-div-conteiner2 .footer-div:last-child{
   text-align: right;
   float: right;
-  padding: 68px 319px 30px 50px;
   }
 .footer-div span{
   padding-bottom: 30px;
@@ -499,3 +509,152 @@ h5{
   padding-bottom: 30px;
 
 }
+
+nav:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (max-width:1170px) {
+    #prop1 .offerte{
+      width: 100%;
+    }
+
+    #prop1 .offerte img{
+      float: left;
+      width: 30%;
+      margin-bottom: 50px;
+    }
+    #prop1 .offerte:nth-child(2) img{
+      float: right;
+      width: 30%;
+    }
+    nav ul:nth-child(1){
+      display: none;
+    }
+    /* DA CREARE */
+    #menunav{
+      display: inline-block;
+    }
+    /* DA CREARE */
+    .piede{
+      display: none;
+    }
+    /* DA CREARE */
+    #menupiede{
+      display: inline-block;
+    }
+    /* DA CREARE */
+    h1{
+      font-size: 20px;
+    }
+
+  }
+  @media only screen and (max-width:1050px) {
+    h1{
+      text-align: center;
+      font-size: 30px;
+    }
+    .blue-sfondo2{
+      background-size: cover;
+
+    }
+    #genitore1_2, .interazione {
+      font-size: 14px;
+      width: 150px;
+    }
+    .bottone3{
+      margin-left: calc(50% - 93px);
+
+    }
+    .blue-contenuto{
+      padding: 0px;
+      width: 100%;
+      float: left;
+    }
+    .vecchi{
+      display: none;
+    }
+    .blue-sfondo{
+      background-image: url("img/sfondo-blue.jpg");
+    }
+    @media only screen and (max-width:870px){
+      nav ul{
+        display: none;
+      }
+      nav img:first-child{
+        width: 90%;
+        position: absolute;
+        opacity: 0.2;
+      }
+      .riga_grigia h3{
+        font-size: 1em;
+      }
+      #prop1 .offerte img{
+        float: none;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+      }
+      #prop1 .offerte:nth-child(2) img{
+        float: none;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .immagine-spiegazione div{
+      text-align: center;
+      width: 100%;
+    }
+
+    #genitore1_2, .interazione {
+      float: none;
+      font-size: 16px;
+      width: 200px;
+    }
+    .spiegazione>div>h6{
+      float:none;
+      width:auto;
+
+    }
+    .titoli6{
+      font-size: 4vw;
+      width: 80%;
+    }
+    #anonima img{
+      width: 80vw;
+    }
+    #prop2 .offerte{
+      width: 100%;
+      text-align: center;
+    }
+    .div-h2{
+      width: 100%;
+    }
+    .div-h2 p{
+      width: auto;
+    }
+    .blue-div-left{
+      width: 100%;
+      text-align: center;
+    }
+    .blue-div-right{
+      width: 100%;
+      text-align: center;
+    }
+    .footer-div:first-child{
+      display: none;
+    }
+.footer-div-conteiner2 .footer-div:last-child{
+    float: none;
+    text-align: center;
+  }
+
+    /* DA CREARE */
+    #menufooter{
+      display:block;
+    }
+    /* DA CREARE */
+
+  }
